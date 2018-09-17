@@ -1,7 +1,7 @@
 import os
 import getpass
 import argparse
-from tarploy.utils import run_deploy
+from tarship.utils import run_deploy
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--host', help='remote hostname')

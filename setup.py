@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name='tarploy',
+    name='tarship',
     version='1.0',
     install_requires=[
         'paramiko'
@@ -10,7 +10,7 @@ setup(
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'tarploy = tarploy.bin:run'
+            'tarship = tarship.bin:run'
         ]
     }
 )
