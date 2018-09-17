@@ -49,9 +49,13 @@ def show_output(readable):
 
 def run_deploy(source_dir, server, username, password):
     time_start = datetime.datetime.now()
+    print('Starting deployment process')
 
+    print('Gathering instructions')
     instructions = get_instructions(source_dir)
     tarname = ntpath.basename(source_dir) + '.tar.gz'
+
+    print('Compressing: {}'.format(tarname))
     tar = make_tarfile(tarname, source_dir)
 
     print('Establishing ssh connection')
