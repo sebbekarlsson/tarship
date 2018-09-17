@@ -5,7 +5,8 @@ setup(
     name='tarship',
     version='1.0',
     install_requires=[
-        'paramiko'
+        'paramiko',
+        'scp'
     ],
     packages=find_packages(),
     entry_points={
