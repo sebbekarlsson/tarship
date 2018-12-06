@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='tarship',
-    version='1.0.1',
+    version='1.0.2',
     install_requires=[
         'paramiko',
         'scp'
